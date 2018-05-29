@@ -2,7 +2,7 @@
 
 namespace DesignPatternsStudy
 {
-    public class Twich
+    public class Twich : OffensiveOperator
     {
         public Twich()
         {
@@ -11,11 +11,15 @@ namespace DesignPatternsStudy
 
         public int Dronning { get; internal set; }
 
+        string Skill = "Activate Shoke Dron";
+
         public void ActivateDron()
         {
             Dronning -= 1;
-            Console.WriteLine("감전드론을 작동합니다");
+            Console.WriteLine(Skill);
         }
+
+        
     }
     
 }

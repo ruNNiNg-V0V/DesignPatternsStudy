@@ -1,20 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DesignPatternsStudy
 {
-    public class OffensiveOperator
+    interface OffensiveOperator
     {
-        public OffensiveOperator(int Amour, int Speed)
-        {
-            Dronning = 2;
-        }
-
-        public int Dronning { get; internal set; }
-
-        public void ActivateDron()
-        {
-            Dronning -= 1;
-            Console.WriteLine("드론을 작동합니다");
-        }
+        void ActivateDron();
     }
 }
